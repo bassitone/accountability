@@ -2,13 +2,6 @@
 
 {% block title %}Accountability - Your New Robot Buddy{% endblock %}
 
-{% block head %}
-{{ super() }}
-<link rel="shortcut icon" href={{"url_for('static', filename='favicon.ico')"}}
-  type="image/x-icon">
-<link rel="icon" href={{"url_for('static', filename='favicon.ico')"}}
-  type="image/x-icon">
-{% endblock %}
 
 {% block page_content %}
 <div class="page-header">
@@ -18,5 +11,5 @@
     That's why I'm here!</h2>
 </div>
 <p>The current date and time is: {{ moment(current_time).format('LLL')}}.</p>
-<p>That was {{moment(current_time).fromNow(refresh=True)}}.</p>  
+<p>That was {{moment(current_time).fromNow(refresh=True)}}.</p>
 {% endblock %}

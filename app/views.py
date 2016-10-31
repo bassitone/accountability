@@ -1,7 +1,7 @@
 from flask import render_template
 from app import app
 from datetime import datetime
-# from flask_moment import Moment
+# TODO: Create forms classes in a separate file.  Then import them here
 
 # Begin homepage.  / or /index TBD
 @app.route('/index')
@@ -21,3 +21,9 @@ def user(name):
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('404.html')
+
+@app.route('/login', methods=["GET", "POST"])
+def login():
+    my_name = None
+
+    login = LoginForm()
