@@ -14,3 +14,4 @@ Built on Flask/Python 3/Bootstrap/some database I haven't picked yet.  Probably 
 * Create a new Python3 Virtualenv (or use your global python3 if you're feeling reckless - venv is the only supported configuration)
 * venv/bin/pip3 install -r requirements.txt
 * Edit secrets.py with your own keys.  Use of the defaults (especially in prod) is at your own risk.
+* python3 run.py in your venv
